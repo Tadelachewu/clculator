@@ -1,0 +1,15 @@
+.cont{
+  background-color: greenyellow;
+  color: darkorange;
+  height: 100vh;
+  width: 100vh;
+}
+h1{
+
+  color: lime;
+  font-size: larger;
+  position: relative;
+  left: 30px;
+  top: 60px;
+
+}

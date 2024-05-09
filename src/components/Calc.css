@@ -1,24 +1,38 @@
 
 .calcu {
-    width: 300px;
-    margin: 4 auto;
-    border: 1px solid #ccc;
+     resize: both;
+    margin: 20px;
+    border: 10px  #ccc solid;
     border-radius: 5px;
     padding: 10px;
+    min-width: 100vh;
+    min-height: 100vh;
+    background-color: steelblue;
+   
   }
   
+  
   .disp {
-    background-color: #f5f5f5;
+    background-color: #8a7979;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 6px;
     margin-bottom: 10px;
+    width: auto;
+   
+    
   }
+  input{
+    color: rgb(19, 224, 180);
+    width: 100vh;
+    background-color: blue;
+    }
   
   .main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 5px;
+    min-width: 50vh;
   }
   
   .button {
@@ -32,13 +46,14 @@
   }
   
   .button:hover {
-    background-color: #e0e0e0;
+    background-color: #19a1b3;
   }
   
   .button:active {
-    background-color: #d0d0d0;
+    background-color: #5d10b6;
   }
   h1{
     position: relative;
     top: 0px;
   }
+ 

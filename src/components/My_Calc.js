@@ -4,7 +4,6 @@ import "./Calc.css";
 
 const Calculator=()=>{
     const [val,setVal]=useState("");
-    const [temp,setTem]=useState("");
     const handle=(e)=>{
         //console.log(typeof(e));
         if(e == "="){
@@ -48,31 +47,31 @@ const Calculator=()=>{
         
         }
 
-    const list=["1","2","3","4",
+    const list=["=","sinh","acos","?",
 
-    "5","6","7","8",
+    "pi","/","0","sin",
 
-    "9","0","pi","e"
-    ,"sin","cos",
+    "log","ceil","not",'+'
+    ,"1","cos",
 
-    "tan","asin","acos","atan",
-    "sinh","cosh","tanh",
+    "cosh","sqrt","or","*",
+    "2","tan","tanh",
 
-    "asinh","acosh","atanh",
+    "asinh","and","-",
 
-    "log","sqrt","cbrt","log10",
+    "3","asin","cbrt","log10",
 
-    "log2","%","exp","abs",
-    "sign","max","min",
+    "!=","^","4","abs",
+    "sign","max",">",
 
-    "floor","ceil","factorial",
-    "round","gcd","lcm",
-    "^", "+","-","*","/",
+    "%","5","factorial",
+    "round","gcd","<",
+    '(', "6","atanh","atan","floor",
 
-    "(",")","=",".",
-    "and","or","not",":","?",
+    ">=",")","7",".",
+    "acosh","log2","==",":","8",
 
-    ">","<","==","<=",">=","!=","'"," ",",","'",'"','"',
+    "min","lcm","exp","<=",'"',"9","'"," ",",","'",'"','e',
     
     "clear","back"];
 
@@ -80,7 +79,7 @@ const Calculator=()=>{
     <div className="calcu"> 
     <h1> this is calculator body</h1>
     <div className="disp"> 
-     <input type="text" value={val} readOnly/>
+     <input  type="text" value={val} readOnly/>
     </div>
     <div className="main"> 
     
